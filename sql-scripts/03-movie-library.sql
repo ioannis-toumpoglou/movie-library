@@ -13,6 +13,6 @@ CREATE TABLE `movies` (
   `category` varchar(50) DEFAULT NULL,
   `year` int DEFAULT NULL,
   `description` varchar(1000) DEFAULT NULL, 
-  `location` varchar(75) DEFAULT NULL,
+  `image_location` varchar(75) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
