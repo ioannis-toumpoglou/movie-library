@@ -13,7 +13,6 @@ the records with the use of keywords.
 	<li>Spring REST</li>
 	<li>Apache Maven</li>
 	<li>JSP</li>
-	<li>Servlet</li>
 	<li>Hibernate</li>
 	<li>MySQL database</li>
 </ol>
