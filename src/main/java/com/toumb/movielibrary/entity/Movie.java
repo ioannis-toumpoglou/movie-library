@@ -25,8 +25,8 @@ public class Movie {
 	@Column(name="year")
 	private int year;
 	
-	@Column(name="description")
-	private String description;
+	@Column(name="plot")
+	private String plot;
 	
 	@Column(name="image_location")
 	private String imageLocation;
@@ -49,6 +49,14 @@ public class Movie {
 		this.title = title;
 	}
 
+	public int getYear() {
+		return year;
+	}
+
+	public void setYear(int year) {
+		this.year = year;
+	}
+	
 	public String getCategory() {
 		return category;
 	}
@@ -57,20 +65,12 @@ public class Movie {
 		this.category = category;
 	}
 
-	public int getYear() {
-		return year;
+	public String getPlot() {
+		return plot;
 	}
 
-	public void setYear(int year) {
-		this.year = year;
-	}
-
-	public String getDescription() {
-		return description;
-	}
-
-	public void setDescription(String description) {
-		this.description = description;
+	public void setPlot(String plot) {
+		this.plot = plot;
 	}
 
 	public String getImageLocation() {
@@ -83,8 +83,8 @@ public class Movie {
 
 	@Override
 	public String toString() {
-		return "Movie [id=" + id + ", title=" + title + ", category=" + category + ", year=" + year + ", description="
-				+ description + ", imageLocation=" + imageLocation + "]";
+		return "Movie [id=" + id + ", title=" + title + ", year=" + year + ", category=" + category + ", plot="
+				+ plot + ", imageLocation=" + imageLocation + "]";
 	}
 
 }

@@ -21,7 +21,7 @@ public class MovieServiceImpl implements MovieService {
 	
 	@Override
 	public List<Movie> findAll() {
-		return movieRepository.findAll();
+		return movieRepository.findAllByOrderByTitleAsc();
 	}
 
 	@Override
@@ -29,7 +29,7 @@ public class MovieServiceImpl implements MovieService {
 		Optional<Movie> result = movieRepository.findById(id);
 		
 		Movie movie = null;
-		// Check if the employee exists
+		// Check if the movie exists
 		if (result.isPresent()) {
 			movie = result.get();
 		} else {
@@ -40,8 +40,8 @@ public class MovieServiceImpl implements MovieService {
 	}
 
 	@Override
-	public void save(Movie employee) {
-		movieRepository.save(employee);
+	public void save(Movie movie) {
+		movieRepository.save(movie);
 	}
 
 	@Override
