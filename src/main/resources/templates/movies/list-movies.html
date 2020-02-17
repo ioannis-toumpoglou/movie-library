@@ -29,6 +29,7 @@
 				<th>Year</th>
 				<th>Category</th>
 				<th>Plot</th>
+				<th>Image</th>
 				<th>Action</th>
 			</tr>
 		</thead>
@@ -38,7 +39,9 @@
 				<td th:text="${tempMovie.year}"/>
 				<td th:text="${tempMovie.category}"/>
 				<td th:text="${tempMovie.plot}" style="max-width:12em; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;"/>
-				
+				<td>
+				 	<img src="@{tempMovie.image_location}" text="image"/>
+				</td>
 				<td>
 					<a th:href="@{/movies/showUpdateForm(movieId=${tempMovie.id})}" class="btn btn-info btn-sm">Update</a>
 					<a th:href="@{/movies/delete(movieId=${tempMovie.id})}" class="btn btn-danger btn-sm" onclick="if (!(confirm('Are you sure you want to delete this movie?'))) return false">Delete</a>
