@@ -62,9 +62,6 @@ public class MovieController {
 		// Get the image name
 		String imageName = image.getOriginalFilename();
 		movie.setImageName(imageName);
-		// Get the image location
-		String imageLocation = SystemPath.path() + imageName;
-		movie.setImageLocation(imageLocation);
 		// Create a copy of the image
 		copy_file(image.getInputStream(), image.getOriginalFilename());
 		
@@ -87,7 +84,7 @@ public class MovieController {
 	@GetMapping("/delete")
 	public String deleteMovie(@RequestParam("movieId") int id) {
 		Movie movie = movieService.findById(id);
-		String path = movie.getImageLocation();
+		String path = SystemPath.path() + movie.getImageName();
 		File file = new File(path);
 		file.delete();
 		// Delete the code record

@@ -31,9 +31,6 @@ public class Movie {
 	@Column(name="image_name")
 	private String imageName;
 	
-	@Column(name="image_location")
-	private String imageLocation;
-	
 	public Movie() {}
 
 	public int getId() {
@@ -84,18 +81,10 @@ public class Movie {
 		this.imageName = imageName;
 	}
 
-	public String getImageLocation() {
-		return imageLocation;
-	}
-
-	public void setImageLocation(String imageLocation) {
-		this.imageLocation = imageLocation;
-	}
-
 	@Override
 	public String toString() {
 		return "Movie [id=" + id + ", title=" + title + ", year=" + year + ", category=" + category + ", plot="
-				+ plot + ", imageName=" + imageName + ", imageLocation=" + imageLocation + "]";
+				+ plot + ", imageName=" + imageName + "]";
 	}
 
 }

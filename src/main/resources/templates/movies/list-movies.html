@@ -40,7 +40,7 @@
 				<td th:text="${tempMovie.category}"/>
 				<td th:text="${tempMovie.plot}" style="max-width:12em; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;"/>
 				<td>
-				 	<img src="@{tempMovie.image_location}" text="image"/>
+				 	<img th:src="@{/images(name=${tempMovie.imageName})}" alt="No Image Available" width="75" />
 				</td>
 				<td>
 					<a th:href="@{/movies/showUpdateForm(movieId=${tempMovie.id})}" class="btn btn-info btn-sm">Update</a>
