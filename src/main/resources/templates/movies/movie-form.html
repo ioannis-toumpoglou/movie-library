@@ -14,22 +14,22 @@
 <body>
 
 	<div class="container">
-	
-		<h3>Movie Library</h3>
+		<br>
+		<h3>My Movie Library</h3>
 		<hr>
 		
 		<p class="h4 mb-4">Save Movie</p>
 		
-		<form action="#" th:action="@{/movies/save}"
-						 th:object="${movie}" method="POST">
+		<form action="/" th:action="@{/movies/save}"
+						 th:object="${movie}" method="POST" enctype="multipart/form-data">
 		
 			<input type="hidden" th:field="*{id}"/>
 		
-			<input type="text" th:field="*{title}" class="form-control mb-4 col-4" placeholder="Title">
-			<input type="text" th:field="*{year}" class="form-control mb-4 col-4" placeholder="Year">
-			<input type="text" th:field="*{category}" class="form-control mb-4 col-4" placeholder="Category">
-			<input type="text" th:field="*{plot}" class="form-control mb-4 col-4" placeholder="Plot">
-			
+			<input type="text" th:field="*{title}" class="form-control mb-4 col-4" placeholder="Title" required="required">
+			<input type="text" th:field="*{year}" class="form-control mb-4 col-4" placeholder="Year" required="required">
+			<input type="text" th:field="*{category}" class="form-control mb-4 col-4" placeholder="Category" required="required">
+			<input type="text" th:field="*{plot}" class="form-control mb-4 col-4" placeholder="Plot" required="required">
+			<input type="file" name="image" class="form-control mb-4 col-4" placeholder="Image" required="required">			
 			<button type="submit" class="btn btn-info col-2">Save</button>
 		
 		</form>

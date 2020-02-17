@@ -80,7 +80,7 @@ public class Movie {
 		return imageName;
 	}
 
-	public void setImagename(String imageName) {
+	public void setImageName(String imageName) {
 		this.imageName = imageName;
 	}
 
