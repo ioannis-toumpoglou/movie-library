@@ -28,6 +28,9 @@ public class Movie {
 	@Column(name="plot")
 	private String plot;
 	
+	@Column(name="image_name")
+	private String imageName;
+	
 	@Column(name="image_location")
 	private String imageLocation;
 	
@@ -72,6 +75,14 @@ public class Movie {
 	public void setPlot(String plot) {
 		this.plot = plot;
 	}
+	
+	public String getImageName() {
+		return imageName;
+	}
+
+	public void setImagename(String imageName) {
+		this.imageName = imageName;
+	}
 
 	public String getImageLocation() {
 		return imageLocation;
@@ -84,7 +95,7 @@ public class Movie {
 	@Override
 	public String toString() {
 		return "Movie [id=" + id + ", title=" + title + ", year=" + year + ", category=" + category + ", plot="
-				+ plot + ", imageLocation=" + imageLocation + "]";
+				+ plot + ", imageName=" + imageName + ", imageLocation=" + imageLocation + "]";
 	}
 
 }
