@@ -11,7 +11,7 @@ the records with the use of keywords.
 	<li>Spring Boot</li>
 	<li>Spring MVC</li>
 	<li>Spring REST</li>
-	<li>Spring Data</li>
+	<li>Spring Data JPA</li>
 	<li>Apache Maven</li>
 	<li>Thymeleaf</li>
 	<li>MySQL database</li>
