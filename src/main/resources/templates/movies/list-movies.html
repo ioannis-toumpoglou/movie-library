@@ -26,21 +26,23 @@
 		<thead class="thead-dark">
 			<tr>
 				<th>Title</th>
-				<th>Year</th>
-				<th>Category</th>
+				<th style="width:5em;">Year</th>
+				<th style="width:8em;">Category</th>
 				<th>Plot</th>
 				<th>Image</th>
-				<th>Action</th>
+				<th style="width:10em;">Action</th>
 			</tr>
 		</thead>
 		<tbody>
-			<tr th:each="tempMovie : ${movies}">
+			<tr th:each="tempMovie : ${movies}" style="text-align:center; vertical-align:middle;">
 				<td th:text="${tempMovie.title}"/>
 				<td th:text="${tempMovie.year}"/>
 				<td th:text="${tempMovie.category}"/>
-				<td th:text="${tempMovie.plot}" style="max-width:12em; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;"/>
+				<td th:text="${tempMovie.plot}" style="width:400px; height:180px; text-align:justify; "/>
 				<td>
-				 	<img th:src="@{/images(name=${tempMovie.imageName})}" alt="No Image Available" width="75" />
+					<a th:href="@{${'/images/' + tempMovie.imageName}}" target="_blank">
+				 		<img th:src="@{${'/images/' + tempMovie.imageName}}" alt="No Image Available" width="100" />
+				 	</a>
 				</td>
 				<td>
 					<a th:href="@{/movies/showUpdateForm(movieId=${tempMovie.id})}" class="btn btn-info btn-sm">Update</a>
