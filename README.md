@@ -1,7 +1,7 @@
 # Movie Library
 <b>Description:</b>
 
-An application to create a movie list database and is able to perform CRUD operations. 
+The application is used to create a movie database, able to perform CRUD operations. 
 The user has the ability to create a movie collection, providing a description and
 upload an image for each movie.
 <br><br>
