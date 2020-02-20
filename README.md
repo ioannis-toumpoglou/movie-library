@@ -2,7 +2,8 @@
 <b>Description:</b>
 
 The application is used to create a movie database, able to perform CRUD operations. 
-The collection contains movie information, like title, date, plot details and an image.
+The collection contains movie information, specifically the title, date, plot details
+and an image selected and uploaded by the user.
 A REST API implementation is included.
 <br><br>
 <b>Technologies used:</b>
