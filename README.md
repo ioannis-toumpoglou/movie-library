@@ -16,3 +16,29 @@ upload an image for each movie.
 	<li>Thymeleaf</li>
 	<li>MySQL database</li>
 </ol>
+
+# 
+
+<br><br>
+
+<div align="center">
+	<kbd><img src="./images/01.Movies_List.png" width="650" /></kbd>
+	<br><br>
+	<b>Image 1 - List Movies</b>
+</div>
+<br><br>
+<br><br>
+<div align="center">
+	<kbd><img src="./images/02.Add_Movie.png" width="300" /></kbd>
+	<br><br>
+	<b>Image 2 - Add Movie</b>
+</div>
+<br><br>
+<br><br>
+<div align="center">
+	<kbd><img src="./images/03.Delete_Movie.png" width="650" /></kbd>
+	<br><br>
+	<b>Image 3 - Delete Movie</b>
+</div>
+<br><br>
+<br><br>

@@ -35,7 +35,7 @@
 		</thead>
 		<tbody>
 			<tr th:each="tempMovie : ${movies}" style="text-align:center; vertical-align:middle;">
-				<td th:text="${tempMovie.title}"/>
+				<td th:text="${tempMovie.title}" style="text-align:left;"/>
 				<td th:text="${tempMovie.year}"/>
 				<td th:text="${tempMovie.category}"/>
 				<td th:text="${tempMovie.plot}" style="width:400px; height:180px; text-align:justify; "/>
