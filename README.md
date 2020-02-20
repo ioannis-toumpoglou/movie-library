@@ -42,3 +42,10 @@ upload an image for each movie.
 </div>
 <br><br>
 <br><br>
+<div align="center">
+	<kbd><img src="./images/04.REST_API.png" width="650" /></kbd>
+	<br><br>
+	<b>Image 4 - REST API</b>
+</div>
+<br><br>
+<br><br>
