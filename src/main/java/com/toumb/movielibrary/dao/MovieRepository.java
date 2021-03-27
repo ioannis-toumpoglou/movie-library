@@ -8,7 +8,7 @@ import com.toumb.movielibrary.entity.Movie;
 
 public interface MovieRepository extends JpaRepository<Movie, Integer> {
 	
-	// Add a method to sort records by last name
+	// Add a method to sort records by title
 	public List<Movie> findAllByOrderByTitleAsc();
 
 }
